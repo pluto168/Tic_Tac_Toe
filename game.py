@@ -128,6 +128,10 @@ def start_game():
             display(row1, row2, row3)
             print("Player 2 wins!! congrats")
             return 
-        
+        #平手情況
+        elif result == "no one wins" and counter == 9:
+            display(row1, row2, row3)
+            print("Tie game!!")            
+            return 
 
 start_game()
